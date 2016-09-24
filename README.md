@@ -27,4 +27,4 @@
  + simpleform
  
 
-[NMSU Grants Ride Board on Heroky](https://nmsug-ride-board.herokuapp.com/)
+[NMSU Grants Ride Board on Heroku](https://nmsug-ride-board.herokuapp.com/)
