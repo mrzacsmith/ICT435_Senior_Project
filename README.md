@@ -30,7 +30,6 @@
 ##NMSU Specs
 + Color code: #8c0b42
  
-
+##Links
 + [NMSU Grants Ride Board on Heroku](https://nmsug-ride-board.herokuapp.com/)
-
 + [Project Todo List](https://github.com/zrsmith75/ICT435_Senior_Project/blob/master/Todo.md)
