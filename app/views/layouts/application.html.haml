@@ -1,0 +1,37 @@
+!!!
+%html
+%head
+  %title Aggie Ride Board
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
+  %link{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Dosis:300,400,700", type: "text/css"}
+  %link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"}
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true 
+  = csrf_meta_tags 
+%body
+  %header.main_header.clearfix
+    .container
+      #logo 
+        - if user_signed_in?
+          %p  
+            = link_to "Welcome to NMSU Aggie Ride Board", root_path
+
+        - else
+          %p= link_to "FAQ", info_FAQ_path
+          %p= link_to "Contact US", info_contact_path
+      #buttons
+        - if user_signed_in?
+          = link_to "New Rider", new_rider_path
+          = link_to "Edit Profile", edit_user_registration_path
+          = link_to "Sign out", destroy_user_session_path, method: :delete
+        - else
+          = link_to "Sign Up", new_user_registration_path
+          = link_to "Log In", new_user_session_path
+      
+  .container    
+    %p.notice= notice
+    %p.alert= alert
+    
+
+.conitainer
+  = yield
+
