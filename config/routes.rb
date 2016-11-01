@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :riders
   resources :posts
-  resources :info
+
  
   get 'info/FAQ'
 
