@@ -17,19 +17,21 @@
 </table>
 
 <tbody>
-    <% @rider.each do |rider| %>
+    <% @rider.each do |riders| %>
      <tr>
-         <td><%= rider.latitude %></td>
-         <td><%= rider.longitude %></td>
-         <td><%= rider.address %></td>
-         <td><%= rider.description %></td>
-         <td><%= rider.title %></td>
-         <td><%= link_to 'Show', rider %></td>
-         <td><%= link_to 'Edit', edit_rider_path(rider) %></td>
-         <td><%= link_to 'Remove', rider, method: :delete, data: { confirm: 'Are you sure?'</td>
+         <td><%= riders.latitude %></td>
+         <td><%= riders.longitude %></td>
+         <td><%= riders.address %></td>
+         <td><%= riders.description %></td>
+         <td><%= riders.title %></td>
+         <td><%= link_to 'Show', riders %></td>
+         <td><%= link_to 'Edit', edit_riders_path(riders) %></td>
+         <td><%= link_to 'Remove', riders, method: :delete, data: { confirm: 'Are you sure?'</td>
      </tr>
 </tbody>
+
 <%= link_to 'New Rider', new_rider_path %>
+
 <div style='width: 800px;'>
   <div id="map" style='width: 800px; height: 400px;'></div>
 </div>
