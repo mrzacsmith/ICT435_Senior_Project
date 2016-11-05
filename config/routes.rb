@@ -2,12 +2,12 @@ Rails.application.routes.draw do
   resources :riders
   resources :posts
 
- 
+  root 'pages#index'
   get 'info/FAQ'
 
   get 'info/contact'
-
- root 'riders#index'
+  
+  get 'riders/index'
   get 'posts/index'
 
   get 'posts/new'

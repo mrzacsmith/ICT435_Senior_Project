@@ -5,6 +5,10 @@ class RidersController < ApplicationController
   # GET /riders.json
   def index
     @riders = Rider.all
+    @hash = Gmaps4rails.build_markers(@rider) do |rider, markers|
+  markers.lat rider.latitude
+  markers.lng rider.longitude
+end
   end
 
   # GET /riders/1

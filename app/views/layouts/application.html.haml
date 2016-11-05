@@ -16,8 +16,10 @@
             = link_to "Welcome to NMSU Aggie Ride Board", root_path
 
         - else
-          %p= link_to "FAQ", info_FAQ_path
-          %p= link_to "Contact US", info_contact_path
+          %p 
+          = link_to "Aggie Ride Board", root_path
+          
+
       #buttons
         - if user_signed_in?
           = link_to "New Rider", new_rider_path
@@ -34,4 +36,7 @@
 
 .conitainer
   = yield
+  
+.container
+= render "layouts/footer"
 

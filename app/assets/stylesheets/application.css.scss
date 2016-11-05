@@ -43,6 +43,11 @@
         color: black;
     }
   }
+.container .footer {
+  width: 100%;
+  margin: 0 auto;
+  background: #8c0b42;
+}
   #buttons {
     float: right;
     a {
@@ -76,7 +81,7 @@
 }
 
 #posts, #post_content {
-  background: white;
+  background: whit;
   padding: 2em 5%;
   border-radius: .5em;
   h1 {
@@ -159,3 +164,4 @@
 		}
   }
 }
+
